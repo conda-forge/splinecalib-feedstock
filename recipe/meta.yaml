@@ -1,5 +1,5 @@
 {% set name = "splinecalib" %}
-{% set version = "0.0.2" %}
+{% set version = "0.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cfd734701977949dde328712f9e4c578eefb21eb8295a6c3fb7462a7b2ee5083
+  sha256: 69dcfa03247c4caf30a99c2efb070f9074a692d419a2fd16386371d0af2ca816
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 2
+  number: 0
 
 requirements:
   build:
@@ -36,7 +36,7 @@ test:
 
 about:
   home: https://github.com/numeristical/splinecalib
-  summary: 'Simple, fast, extensible JSON encoder/decoder for Python'
+  summary: Simple, fast, extensible JSON encoder/decoder for Python
   description: |
     SplineCalib is a Python package for calibrating
     ML models using smoothing splines. 
