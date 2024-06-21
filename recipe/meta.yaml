@@ -1,5 +1,5 @@
 {% set name = "splinecalib" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d0dd4c9f091457a3838bd1c32fc98d8e9abaab1282c5088642cce16f2b0cee63
+  sha256: dd92555ff9fcf556b3628e910d0253a6f528422480db9db4be98f4ce5f1b3206
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
